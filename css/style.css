@@ -1,0 +1,164 @@
+body {
+  background: #469FC1 url('https://www.sunnyneo.com/shop/SHOP_fae_bg.jpg') repeat-x bottom left fixed;
+  font-family: Verdana, sans-serif;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  background: #9F84A5;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+nav li a {
+  color: #E6D9FC;
+  font: bold 11px verdana;
+  text-decoration: none;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+nav li a:hover {
+  color: #FFF;
+}
+
+header.hero {
+  background: url('https://www.sunnyneo.com/shop/SHOP_fae_head.gif') no-repeat;
+  height: 635px;
+  border-top: 20px solid #5F3B68;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+header.hero h1,
+header.hero p {
+  background-color: rgba(95, 59, 104, 0.7);
+  padding: 1em;
+  border-radius: 10px;
+}
+
+main {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 2em;
+  background: url('https://www.sunnyneo.com/shop/SHOP_fae_main.gif');
+  border-left: 20px solid #5F3B68;
+  border-right: 20px solid #5F3B68;
+}
+
+h1, h2 {
+  color: #FFF;
+  text-shadow: 1px 1px 2px #000;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+section.event img,
+table img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #E6D9FC;
+}
+
+footer {
+  width: 950px;
+  height: 452px;
+  background: url('https://www.sunnyneo.com/shop/SHOP_fae_foot.gif') no-repeat;
+  margin: 0 auto;
+  padding-top: 97px;
+  text-align: center;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+th, td {
+  border: 1px solid #E6D9FC;
+  padding: 10px;
+  text-align: center;
+  color: #FFF;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(230, 217, 252, 0.1);
+}
+
+/* Form Styling */
+form {
+  background: rgba(159, 132, 165, 0.6);
+  padding: 2em;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+input, textarea, button {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+}
+
+button {
+  background: #5F3B68;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #7A5D84;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  main, footer {
+    width: 95%;
+    border: none;
+  }
+
+  header.hero {
+    background-size: cover;
+  }
+}
+
+/* Optional: Sparkle Animation Placeholder */
+/*
+@keyframes sparkle {
+  0% { opacity: 0; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 0; transform: scale(1); }
+}
+
+.sparkle {
+  animation: sparkle 1.5s infinite ease-in-out;
+  color: #FFF;
+  text-shadow: 0 0 10px #E6D9FC;
+}
+*/
